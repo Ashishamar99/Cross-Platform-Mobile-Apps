@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Weather App</title>  
+<style>
+input
+    {
+        border: none;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 12px;
+    }
+button
+    {
+        border: none;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 12px;
+    }
+</style>
+</head>
+<script>
+function abc1(){
+    var x = document.getElementById("t1").value;
+    window.location.href="https://api.openweathermap.org/data/2.5/weather?q="+x+"&mode=html&appid=1e1f23bbbef60eaa19d6bbf965949790"; 
+    /*Step 1:: change the "samples" to "api" in the link
+      Step 2:: delete "london" and concatenate the variable name to that link.
+      Step 3:: go to the website to get the api
+      Step 4:: login or sign up
+      Step 5:: click on "API Keys"
+      Step 6:: copy the API key and paste it in the link ie; appid = your api key
+      Step 7:: wait for some time and try to run the app (in case of error 401) 
+      
+      Original Link - https://samples.openweathermap.org/data/2.5/weather?q=London&mode=html&appid=b6907d289e10d714a6e88b30761fae22
+    */
+}
+
+</script>
+<body style="background-color: #a6f7da">
+<center>
+<input id="t1" placeholder="Enter City" type="text"><br><br><br>
+<button onclick="abc1()">Get Weather</button><br><br>
+<a href="welcome.html"><button>Back</button></a>
+</center>
+</body>
+</html>

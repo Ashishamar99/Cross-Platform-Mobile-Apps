@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Sign Up</title>
+
+<style>
+::placeholder
+    {
+        color: black;
+        font-family: sans-serif;
+    }
+input
+    {
+        border-radius: 100px;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+button
+    {
+        background-color: #898db1;
+        color: black;
+        height: 30;
+        font-size: 16px;
+        width: 150;
+        font-family: sans-serif;
+        border-radius: 100px;
+    }
+label
+    {
+        font-family: sans-serif;
+        font-size: 16px;
+        
+    }
+</style>
+</head>
+<body style="background-color: #f7f1a6">
+<center>
+<img style="width: auto;height: 250" src="signup.png"><br><br>
+</center>
+<center>
+<form> <!-- form tag closes after reset button ie; submit and cancel button are outside the form -->
+    
+<label>Name</label>
+<input id="first" placeholder="First Name" type="text">
+<input id="last" placeholder="Last Name" type="text"><br><br>
+<label>Email</label>
+<input id="em2" placeholder="Create a new username" type="email"><br><br>
+<label>Password</label>
+<input id="pass1" placeholder="Create a new password" type="password"><br><br>
+<label>Confirm Password</label>
+<input id="pass2" placeholder="Confirm Password" type="password"><br><br>
+<label>Gender</label>
+<input type="radio">Male
+<input type="radio">Female
+<input type="radio">Other
+<br><br>
+<input style="height: 30;width: 150" type="reset" value="Reset"> <!-- To create a reset button -->
+    
+</form>
+<br><br><button onclick="xyz()">Submit</button>&nbsp;&nbsp;&nbsp;
+<a href="index.html"><button>Cancel</button></a>
+</center>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
