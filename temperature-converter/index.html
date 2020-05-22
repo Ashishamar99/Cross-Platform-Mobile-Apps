@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Temperature Converter</title>    
+<style>
+button
+    {
+        border-radius: 100px;
+        color: white;
+        font-size: 20;
+        background-color:black;
+        font-family: sans-serif;
+    }
+label
+    {
+        font-family: inherit;
+        font-size: 20;
+    }
+input
+    {
+        font-family: inherit;
+        font-size: 20;
+        background-color: #f6cd85;
+        border-radius: 100px;
+        text-align: right;
+        /*background: transparent;*/
+    }
+</style>
+</head>
+<script>
+function ftoc()
+    {
+        var x = parseFloat(document.getElementById("fare").value);
+       // (32°F − 32) × 5/9 = 0°C
+        var y = (x-32)*(5/9);
+        document.getElementById("celc").value=y;
+    }
+function ctof()
+    {
+        var x = parseFloat(document.getElementById("celc").value);
+       // (33.8°C × 9/5) + 32 = 92.84°F
+        var y = (x*9/5)+32;
+        document.getElementById("fare").value=y;
+    }
+function dele()
+    {
+        document.getElementById("fare").value="";
+        document.getElementById("celc").value="";
+    }
+</script>
+<body style="background-color: #f6cd85">
+<center>
+<img style="width: 180;height: 180" src="fandc.jpg"><br><br><br>    
+</center>
+<center>
+<label>Enter temperature in farenheit::</label>
+<input id="fare" type="number">
+<label>F</label><br><br><br>
+<button id="btn1" onclick="ftoc()">F To C</button>&nbsp;&nbsp;&nbsp;
+<button id="btn2" onclick="ctof()">C To F</button>&nbsp;&nbsp;&nbsp;
+<button id="btn3" onclick="dele()">Delete</button><br><br><br>
+<label>Enter temperature in celcius::</label>
+<input id="celc" type="number">
+<label>C</label><br><br>
+</center>
+</body>
+</html>
