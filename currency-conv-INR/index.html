@@ -1,0 +1,60 @@
+<html>
+<head>
+    <style>
+    label
+        {
+            background-color: black;
+            color: white
+        }
+    </style>
+    <title> Currency converter</title>
+    </head>
+    <script>
+    function abc(){
+        
+        var x =document.getElementById("id1").value;
+        var y = document.getElementById("s1").value;
+    
+        switch(y)
+            {
+                case "d":document.getElementById("id2").value=x*69.18;
+                    break;
+                case "e":document.getElementById("id2").value=x*77.56;
+                    break;
+                case "p":document.getElementById("id2").value=x*91.13;
+                    break;
+                case "j":document.getElementById("id2").value=x*0.62;
+                    break;
+                case "c":document.getElementById("id2").value=x*51.48;
+                    break;
+                case "s":document.getElementById("id2").value=x*91.13;
+                    break;
+                case "sr":document.getElementById("id2").value=x*0.39;
+                    break;
+            }
+    }
+    </script>
+    <body style="background-color: aqua">
+        <center>
+            <img style="width: auto;height: 150" src="logo.png"><br><br>
+            <label> Enter value to convert::</label>
+            <input id="id1" type="number"><br><br>
+            <label> Select currency to convert::</label>
+            <select onclick="abc()" id="s1"><br><br>
+            <!-- select tag is spinner in android-->
+            <option></option> <!-- empty option -->
+            <option value="d">Dollar</option> 
+                <!-- value is id in this ie, id for each option.......we shouldn't use id for select-->
+            <option value="e">Euro</option>
+            <option value="p">Pound</option>
+            <option value="j">Japanese Yen</option>
+            <option value="c">Canadian</option>
+            <option value="s">Sterling Pound</option>
+            <option value="sr">Sri Lankan Rupee</option>
+            
+        </select><br><br>
+            <label>Currency value in INR::</label>
+            <input id="id2" disabled type="number">
+        </center>
+    </body>
+</html>
