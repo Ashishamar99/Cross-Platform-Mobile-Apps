@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Calculator</title>
+    
+    <style>
+        button
+        {
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            font-size: 50;
+            width: 100%;
+            height: 100%;
+        }
+        table
+        {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        .ash
+        {
+            /*ash is the class name. we can create a class to change attributes of specific elements in a group*/
+            color: black;
+            background-color:aquamarine;
+        }
+    </style>
+    </head>
+    <body>
+    <table border="1">
+        <tr>
+        <td id="id1" style="font-size: 50;font-family: cursive;color: black;background-color: aqua" colspan="4">0</td>
+        </tr>
+        <tr>
+        <td colspan="3"><button onclick="ac(this)">AC</button></td>
+            <td><button onclick="ac(this)" class="ash">/</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="ac(this)">7</button></td>
+        <td><button onclick="ac(this)">8</button></td>
+        <td><button onclick="ac(this)">9</button></td>
+        <td><button onclick="ac(this)" class="ash">*</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="ac(this)">4</button></td>
+        <td><button onclick="ac(this)">5</button></td>
+        <td><button onclick="ac(this)">6</button></td>
+        <td><button onclick="ac(this)" class="ash">-</button></td>
+        </tr>
+        <tr>
+        <td><button onclick="ac(this)">1</button></td>
+        <td><button onclick="ac(this)">2</button></td>
+        <td><button onclick="ac(this)">3</button></td>
+        <td><button onclick="ac(this)" class="ash">+</button></td>
+        </tr>
+        <tr>
+        <td colspan="2">
+            <button onclick="ac(this)">0</button></td>
+        <td><button onclick="ac(this)">.</button></td>
+        <td><button onclick="ac(this)">=</button></td>
+        </tr>
+        </table>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
